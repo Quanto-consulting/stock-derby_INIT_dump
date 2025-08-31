@@ -492,6 +492,22 @@ COPY public.seven_up_down_pair_market_items_market_item ("sevenUpDownPairId", "m
 
 
 --
+-- Data for Name: slot_pair; Type: TABLE DATA; Schema: public; Owner: node_app
+--
+
+COPY public.slot_pair (id, type, active, "createdAt", "updatedAt", "deletedAt") FROM stdin;
+1	nse	t	2025-05-30 15:33:00	2025-05-30 15:33:00	\N
+2	nse	t	2025-05-30 15:33:00	2025-05-30 15:33:00	\N
+3	nse	t	2025-05-30 15:33:00	2025-05-30 15:33:00	\N
+4	nse	t	2025-05-30 15:33:00	2025-05-30 15:33:00	\N
+5	crypto	t	2025-06-11 14:00:33.952146	2025-06-11 14:00:33.952146	\N
+6	usa_market	t	2025-06-11 14:27:28.373552	2025-06-11 14:27:28.373552	\N
+7	crypto	t	2025-08-30 06:30:31.46876	2025-08-30 06:30:31.46876	\N
+8	crypto	t	2025-08-30 08:53:03.531588	2025-08-30 09:23:21.395408	\N
+\.
+
+
+--
 -- Data for Name: slot_pair_market_items_market_item; Type: TABLE DATA; Schema: public; Owner: node_app
 --
 
@@ -630,6 +646,13 @@ SELECT pg_catalog.setval('public.scheduler_id_seq', 24, true);
 --
 
 SELECT pg_catalog.setval('public.seven_up_down_pair_id_seq', 5, true);
+
+
+--
+-- Name: slot_pair_id_seq; Type: SEQUENCE SET; Schema: public; Owner: node_app
+--
+
+SELECT pg_catalog.setval('public.slot_pair_id_seq', 8, true);
 
 
 --
